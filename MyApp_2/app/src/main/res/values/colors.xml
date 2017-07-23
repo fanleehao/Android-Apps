@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="buttonDefault">#2b2b2b</color>
+    <color name="buttonPressed">#0099fd</color>
+    <color name="buttonSelected">#670099</color>
+    <color name="colorGameBackGround">#BBADA0</color>
+    <color name="colorBlockBackGround">#CDC1B4</color>
+</resources>

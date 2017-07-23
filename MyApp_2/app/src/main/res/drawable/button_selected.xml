@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/buttonSelected" />
+            <corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp" />
+        </shape>
+    </item>
+    <item android:top="1px" android:bottom="1px" android:left="1px" android:right="1px">
+        <shape>
+            <gradient
+                android:startColor="@color/buttonSelected"
+                android:endColor="@color/colorWhite"
+                android:type="linear"
+                android:angle="90"
+                android:centerX="0.5"
+                android:centerY="0.5" />
+            <corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp" />
+        </shape>
+    </item>
+</layer-list>

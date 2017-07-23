@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/th_dialog_sign"
+
+    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg8"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_dialog_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:text="账        号  "/>
+                    <EditText
+                        android:id="@+id/et_dialog_sign_in_name"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:text="密        码  "/>
+                    <EditText
+                        android:id="@+id/et_dialog_sign_in_password"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:inputType="textPassword"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dialog_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:text="请输入登录信息"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <Button
+                        android:id="@+id/bt_dialog_sign_in"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/buttonk"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="登   录"/>
+                    <Button
+                        android:id="@+id/bt_dialog_sign_in_exit"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/buttonk"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="取   消"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dialog_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:text="账        号 "/>
+                    <EditText
+                        android:id="@+id/et_dialog_sign_up_username"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:text="昵        称 "/>
+                    <EditText
+                        android:id="@+id/et_dialog_sign_up_nickname"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:text="密        码 "/>
+                    <EditText
+                        android:id="@+id/et_dialog_sign_up_password"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:inputType="textPassword"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:text="确认密码 "/>
+                    <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:text="密码"/>-->
+                    <EditText
+                        android:id="@+id/et_dialog_sign_up_password2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:inputType="textPassword"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dialog_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:text="请输入注册信息"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <Button
+                        android:id="@+id/bt_dialog_sign_up"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/buttonk"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="注   册"/>
+                    <Button
+                        android:id="@+id/bt_dialog_sign_up_exit"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/buttonk"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="取   消"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</TabHost>

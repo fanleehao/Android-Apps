@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:background="@drawable/backg2"
+    tools:context="com.example.myapp_2.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/bt_Menu"
+            android:layout_width="73dp"
+            android:layout_height="44dp"
+            android:text="@string/Menu"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonl"
+            android:onClick="menuOnClick"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt_select"
+            android:layout_width="278dp"
+            android:layout_height="58dp"
+            android:textSize="30dp"
+            android:text="@string/select"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonl"
+            android:onClick="selectOnClick" />
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+        </GridView>
+        <Button
+            android:id="@+id/bt_guru"
+            android:layout_width="235dp"
+            android:layout_height="49dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonl"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="进入骨灰级难度" />
+    </LinearLayout>
+
+</LinearLayout>

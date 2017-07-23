@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <com.example.myapp_2.view.GameButton
+            android:id="@+id/bt_easy"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:background="@drawable/buttonl"
+            android:text="@string/easy"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp"
+            android:layout_weight="0.25"/>
+
+        <com.example.myapp_2.view.GameButton
+            android:id="@+id/bt_normal"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/buttonl"
+            android:text="@string/normal"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <com.example.myapp_2.view.GameButton
+            android:id="@+id/bt_hard"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonl"
+            android:text="@string/hard"
+            android:layout_marginLeft="36dp"
+            android:layout_weight="0.25" />
+        <Button
+            android:id="@+id/bt_help"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonl"
+            android:text="@string/help"
+            android:layout_marginLeft="10dp"
+            android:onClick="helpOnClick"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textSize="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"/>
+        <ProgressBar
+            android:id="@+id/pb_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            style="?android:attr/progressBarStyleHorizontal"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defaultTime"
+            android:textSize="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/iv_game"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TableLayout
+            android:id="@+id/tl_game"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="10dp">
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

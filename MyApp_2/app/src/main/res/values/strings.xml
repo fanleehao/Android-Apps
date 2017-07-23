@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">植物大战僵尸拼图</string>
+    <string name="menu_gameStart">开始游戏</string>
+    <string name="menu_rankList">排&#160;&#160;行&#160;&#160;榜</string>
+    <string name="menu_gameSetting">游戏设置</string>
+    <string name="menu_gameOver">退出游戏</string>
+    <string name="description">请选择一张图片</string>
+    <string name="Menu">提示</string>
+    <string name="Menu_tv">游戏提示</string>
+    <string name="Menu_me">\u3000\u3000先选择一张图片,然后选择难度,通过点击使图片移动,让每张图片回到与原图相同的位置即可过关</string>
+    <string name="confirm">确定</string>
+    <string name="easy">简单</string>
+    <string name="normal">普通</string>
+    <string name="hard">困难</string>
+    <string name="help">帮助</string>
+    <string name="select">从相册选择图片</string>
+    <string name="time">时间</string>
+    <string name="defaultTime">∞</string>
+    <string name="game_successful">恭喜过关!</string>
+    <string name="gameOver">GameOver!</string>
+    <string name="gameRestart">重新开始</string>
+    <string name="gameRank">记录排名</string>
+    <string name="gameExit">放弃挑战</string>
+
+</resources>
