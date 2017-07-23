@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fanleehao.game2048.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/scoretv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="得分： 0 "
+        android:textColor="@color/colorRed"
+        android:textSize="16pt" />
+    <!--页面中间的网格，游戏界面-->
+    <GridLayout
+        android:id="@+id/gridlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:rowCount="4">
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btRet"
+        android:text="重新开始"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:textSize="16pt"
+        android:gravity="center"
+        android:background="@color/colorBule"
+        android:layout_gravity="bottom"
+        />
+    <!--声明-->
+    <TextView
+        android:id="@+id/copy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="©fanleehao CUGB"
+        android:textColor="@color/colorBule"
+        android:textSize="8pt" />
+</LinearLayout>
